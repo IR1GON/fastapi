@@ -40,16 +40,3 @@ class Order(BaseInfoMixin, Base):
     customer: Mapped[int] = mapped_column(ForeignKey('users.id'))
 
     user = relationship('User', back_populates='orders')
-
-
-
-
-
-
-
-
-
-
-
-
-
