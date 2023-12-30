@@ -72,17 +72,16 @@ async def delete_user(user_id: int):
 
 async def main():
     await asyncio.gather(
-        # create_user(
-        #     name='Timur',
-        #     login='login22266',
-        #     password='1234',
-        #     age=25,
-        #     nickname='nickname',
-        # ),
-        # fetch_users(skip=1)
-        # get_user_by_id(2),
-        # update_user(1, {'name': 'Alex', 'age': 65})
-        delete_user(1)
+         create_user(
+            name='Timur1',
+            login='login22266',
+            password='1234',
+            age=225,
+            nickname='nickname',
+         ),
+        get_user_by_id(1),
+        fetch_users(skip=1),
+
     )
 
 
