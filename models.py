@@ -39,17 +39,5 @@ class Order(BaseInfoMixin, Base):
     price: Mapped[float]
     customer: Mapped[int] = mapped_column(ForeignKey('users.id'))
 
+
     user = relationship('User', back_populates='orders')
-
-
-
-
-
-
-
-
-
-
-
-
-
